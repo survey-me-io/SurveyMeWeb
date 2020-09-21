@@ -1,0 +1,81 @@
+<!-- READ ME -->
+<!--
+	all styling >> 'css'
+	all libraries >> node_modules
+		use npm to install additional dependencies
+	all img, icons, banners, videos, svg, etc. >> 'resource'
+	all javascript >> 'script'
+		please defer all javascript code for end execution
+
+	for now, the main entry point is this document, i.e. 'index.html'
+ -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Survey Me Web</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="node_modules/jquery/dist/jquery.min.js" defer></script>
+		<script src="script/events.js" defer></script>
+	</head>
+	<body>
+		<div class="page-container">
+			<header class="center">
+				<h1><span id="title-1">Survey</span> <span id="title-2">For Me</span></h1>
+			</header>
+			<main>
+				<div class="description-bar center">
+					<div id="required-line">Participating in a survey of groundbreaking study has never been easier.</div>
+					<div class="quote">
+						<p>
+							<span class="quote-marks">&#8220;</span>Launch your study to tens of thousands of trusted participants in minutes.
+							Recruit niche or representative samples on-demand.
+							Prolific builds the most powerful and flexible tools for online research. Sign up for free.
+							<span class="quote-marks">&#8221;</span>
+							<br />
+							(Credit to <a href="https://www.prolific.co/">Prolific</a>)
+						</p>
+					</div>
+				</div>
+				<div class="clear padding">
+					<form class="center" action="index.html" method="post">
+						<div class="flexbox-form">
+							<fieldset>
+								<h4>Step 1: Enter your survey link:</h4>
+								<textarea name="text" rows="9" cols="40" id="text-input" required></textarea><br><br>
+							</fieldset>
+							<img class="arrow" src="resource/arrow.png" alt="An arrow">
+							<fieldset>
+								<h4>Step 2: Choose a target audience</h4>
+								<label for="1">Students</label>
+								<input id="1" type="radio" name="hash" value="students" required checked><br><br>
+								<label for="2">Professors</label>
+								<input id="2" type="radio" name="hash" value="professors"><br><br>
+								<label for="3">General Public</label>
+								<input id="3" type="radio" name="hash" value="public"><br><br>
+							</fieldset>
+							<img class="arrow" src="resource/arrow.png" alt="An arrow">
+							<div class="flexbox-button">
+								<button class="light-up-1 line-down" type="submit">Submit</button>
+								<button class="light-up-2" type="reset" id="reset">Reset</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="padding-output">
+						<span id="text-output"># your survey link will appear here #</span>
+				</div>
+				<div class="copy-container">
+					<button type="button" name="copy-to-clipboard" id="copy-link">Copy link</button>
+				</div>
+			</main>
+			<footer>
+				<div class="bottom"></div>
+				<small>Not responsible for any visual damage incurred.</small>
+				<div class="gray-bar">
+					Copyright <span id="copyright">&copy;</span> 2020. All Rights Reserved.
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
