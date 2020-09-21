@@ -1,0 +1,24 @@
+{
+  "name": "surveymeweb",
+  "version": "1.0.0",
+  "description": "-_Currently under development_",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/survey-me-io/SurveyMeWeb.git"
+  },
+  "author": "Felix, Michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/survey-me-io/SurveyMeWeb/issues"
+  },
+  "homepage": "https://github.com/survey-me-io/SurveyMeWeb#readme"
+}
