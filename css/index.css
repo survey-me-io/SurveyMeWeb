@@ -1,205 +1,216 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-	position: relative;
-	padding: 0;
-	margin: 0;
-	min-height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
 }
 
 body {
-	color: #515151;
-	background-image: linear-gradient(to right, rgba(206, 239, 212, 1), rgba(166, 211, 223, 1));
-	/* background-color: rgba(224, 229, 225, 1); */
-	margin-top: 3.5em;
+  color: #515151;
+  background-image: linear-gradient(
+    to right,
+    rgba(206, 239, 212, 1),
+    rgba(166, 211, 223, 1)
+  );
+  /* background-color: rgba(224, 229, 225, 1); */
+  margin-top: 3.5em;
 }
 
 .page-container {
-	padding: 0 2em 0 2em;
-	margin: 0 auto;
-	width: 80%;
+  padding: 0 2em 0 2em;
+  margin: 0 auto;
+  width: 80%;
 }
 
 h1 {
-	font-size: 46pt;
-	letter-spacing: 2.5px;
-	margin-bottom: 50px;
+  font-size: 46pt;
+  letter-spacing: 2.5px;
+  margin-bottom: 50px;
 }
 
 #title-1 {
-	color: rgb(78, 134, 177);
-	font-weight: bold;
+  color: rgb(78, 134, 177);
+  font-weight: bold;
 }
 
 #title-2 {
-	color: rgb(255, 255, 255);
-	border-style: solid;
-	border-width: thick;
-	padding: 0 10px;
-	font-weight: bold;
+  color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: thick;
+  padding: 0 10px;
+  font-weight: bold;
 }
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .description-bar {
-	border-radius: 36px;
-	border-style: solid;
-	border-width: 3px 0;
-	border-color: #C0C0C0;
-	padding: .2em 0 .8em 0;
-	width: 80%;
-	margin: auto;
-	margin-bottom: 60px;
+  border-radius: 36px;
+  border-style: solid;
+  border-width: 3px 0;
+  border-color: #c0c0c0;
+  padding: 0.2em 0 0.8em 0;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
 }
 
 article {
-	width: 90%;
-	margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #required-line {
-	font-size: 13pt;
-	font-weight: bold;
-	margin: 18px 0 10px 0;
+  font-size: 13pt;
+  font-weight: bold;
+  margin: 18px 0 10px 0;
 }
 
 .quote {
-	color: #2899DA;
-	font-style: italic;
-	font-family: Proxima, serif, monospace;
-	font-size: 15pt;
-	text-align: center;
-	line-height: 26px;
-	width: 60%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: flex-end;
+  color: #2899da;
+  font-style: italic;
+  font-family: Proxima, serif, monospace;
+  font-size: 15pt;
+  text-align: center;
+  line-height: 26px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .quote-marks {
-	/* font-size: 200% */
+  /* font-size: 200% */
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .padding {
-	padding: 1em 0 1em 0;
+  padding: 1em 0 1em 0;
 }
 
 .flexbox-form {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 fieldset {
-	border-radius: 30px;
-	border-style: solid;
-	border-width: 3px;
-	border-color: #C0C0C0;
-	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #c0c0c0;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 #text-input {
-	border-radius: 15px;
+  border-radius: 15px;
 }
 
 .arrow {
-	width: 60px;
-	height: 50px;
+  width: 60px;
+  height: 50px;
 }
 
 .flexbox-button {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 button {
-	position: relative;
-	display: inline-block;
-	padding: 20px 20px;
-	color: #2899DA;
-	border: none;
-	border-radius: 20px;
-	letter-spacing: 2px;
-	font-size: 15pt;
-	font-family: sans-serif, monospace;
-	font-weight: 600;
-	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  display: inline-block;
+  padding: 20px 20px;
+  color: #2899da;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-size: 15pt;
+  font-family: sans-serif, monospace;
+  font-weight: 600;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .line-down {
-	border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .light-up-1:hover {
-	color: #34EDFF;
-	background: #3DA0F0;
-	box-shadow: 0 0 80px #009EFF;
-	transition: .6s;
-	cursor: pointer;
+  color: #34edff;
+  background: #3da0f0;
+  box-shadow: 0 0 80px #009eff;
+  transition: 0.6s;
+  cursor: pointer;
 }
 
 .light-up-2:hover {
-	color: #F52D28;
-	background: #FB987E;
-	box-shadow: 0 0 80px #FB8C5F;
-	transition: .6s;
-	cursor: pointer;
+  color: #f52d28;
+  background: #fb987e;
+  box-shadow: 0 0 80px #fb8c5f;
+  transition: 0.6s;
+  cursor: pointer;
 }
 
 div.padding-output {
-	position: relative;
-	overflow: hidden;
-	height: 4em;
-	margin: 3.5em auto 0 auto;
-	width: 80%;
-	border-radius: 10px;
-	background-color: rgb(249, 251, 243);
-	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 4em;
+  margin: 3.5em auto 0 auto;
+  width: 80%;
+  border-radius: 10px;
+  background-color: rgb(249, 251, 243);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #text-output {
-	position: relative;
-	font-size: 18pt;
-	font-family: Courier, monospace;
+  position: relative;
+  font-size: 18pt;
+  font-family: Courier, monospace;
 }
 
 .copy-container {
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.survey-button {
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  padding: 10px 0;
+  width: 200px;
+  margin: 5em;
 }
 
 #copy-link {
-	text-align: center;
-	font-weight: 400;
-	color: white;
-	background-color: rgb(208, 53, 38);
-	padding: 10px 0;
-	width: 200px;
+  background-color: rgb(208, 53, 38);
+}
+
+#start-survey {
+  background-color: limegreen;
 }
 
 .bottom {
-	padding-top: 90px;
+  padding-top: 90px;
 }
 
 .gray-bar {
-    background-color: gray;
-    color: white;
-    padding: 10px 0px 10px 0px;
-    width: 100%;
-	margin-bottom: 50px;
+  background-color: gray;
+  color: white;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  margin-bottom: 50px;
 }
