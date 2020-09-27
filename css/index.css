@@ -82,11 +82,6 @@ article {
   display: flex;
   justify-content: flex-end;
 }
-
-.quote-marks {
-  /* font-size: 200% */
-}
-
 .clear {
   clear: both;
 }
@@ -174,6 +169,23 @@ div.padding-output {
   align-items: center;
 }
 
+#survey-box {
+  width: 80%;
+  overflow-y: auto;
+  height: 50%;
+  background-color: linen;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+#survey-description {
+  margin: 1em;
+  position: relative;
+  width: 70%;
+}
+#text-left {
+  text-align: left;
+}
 #text-output {
   position: relative;
   font-size: 18pt;
@@ -197,10 +209,24 @@ div.padding-output {
 
 #copy-link {
   background-color: rgb(208, 53, 38);
+  color: white;
 }
 
 #start-survey {
   background-color: limegreen;
+}
+.row-flex {
+  display: flex;
+  flex-direction: column;
+}
+#survey-requirements {
+  position: relative;
+  margin: 1em;
+  height: 80%;
+}
+#take-survey {
+  background-color: lightskyblue;
+  margin: 1em;
 }
 
 .bottom {
