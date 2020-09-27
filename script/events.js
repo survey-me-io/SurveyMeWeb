@@ -1,5 +1,3 @@
-alert('here')
-
 // event listener for mouse over color change
 let copy = document.getElementById('copy-link');
 copy.addEventListener('mouseover', function() {
