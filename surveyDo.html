@@ -1,0 +1,135 @@
+<!-- READ ME -->
+<!--
+	all styling >> 'css'
+	all libraries >> node_modules
+		use npm to install additional dependencies
+	all img, icons, banners, videos, svg, etc. >> 'resource'
+	all javascript >> 'script'
+		please defer all javascript code for end execution
+
+	for now, the main entry point is this document, i.e. 'index.html'
+ -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Me Web</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="script/events.js" defer></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="center">
+        <h1>
+          <span id="title-1">Survey</span> <span id="title-2">For Me</span>
+        </h1>
+      </header>
+      <main>
+        <div class="padding-output">
+          <h3>Available Surveys to Take</h3>
+        </div>
+        <div id="survey-box" class="padding-output">
+          <div id="survey-description">
+            <h3>Survey Name</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque malesuada odio ipsum, vulputate fringilla lorem
+              suscipit a. Curabitur ac pharetra ex. Cras dapibus non ipsum nec
+              placerat. Nullam nibh nibh, aliquet eu quam nec, tempus tempor
+              metus. Maecenas luctus suscipit ex, quis pharetra mauris
+              pellentesque accumsan. Fusce at dolor ac ipsum lacinia iaculis.
+              Vivamus gravida purus vitae turpis ornare bibendum. Aenean at
+              convallis est. Integer non ex a turpis blandit vulputate. Integer
+              quis suscipit metus, egestas fringilla tortor. Nulla sit amet
+              tellus faucibus, blandit lectus vel, imperdiet nibh. Maecenas at
+              nisl venenatis, aliquam odio eget, malesuada mauris. In ultrices
+              dolor sed fringilla cursus. Aenean in convallis ante, ut gravida
+              nisi. Fusce consequat nunc sed ante scelerisque, id feugiat lorem
+              luctus. Morbi convallis lacus nec leo laoreet, a malesuada nisl
+              venenatis. Curabitur fringilla non tortor venenatis posuere. Proin
+              ultrices, ex id ultricies blandit, risus lectus vestibulum velit,
+              imperdiet maximus leo ipsum imperdiet mi.
+            </p>
+          </div>
+          <div class="flexbox-form row-flex">
+            <div id="survey-requirements">
+              <h3>Requirements</h3>
+              <ul>
+                <li>Student</li>
+                <li>Above Age ...</li>
+                <li>third</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://www.google.com">
+                <button
+                  type="button"
+                  name="Take Survey"
+                  id="take-survey"
+                  class="survey-button"
+                >
+                  Check It Out
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="survey-box" class="padding-output">
+          <div id="survey-description">
+            <h3>Survey Name 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque malesuada odio ipsum, vulputate fringilla lorem
+              suscipit a. Curabitur ac pharetra ex. Cras dapibus non ipsum nec
+              placerat. Nullam nibh nibh, aliquet eu quam nec, tempus tempor
+              metus. Maecenas luctus suscipit ex, quis pharetra mauris
+              pellentesque accumsan. Fusce at dolor ac ipsum lacinia iaculis.
+              Vivamus gravida purus vitae turpis ornare bibendum. Aenean at
+              convallis est. Integer non ex a turpis blandit vulputate. Integer
+              quis suscipit metus, egestas fringilla tortor. Nulla sit amet
+              tellus faucibus, blandit lectus vel, imperdiet nibh. Maecenas at
+              nisl venenatis, aliquam odio eget, malesuada mauris. In ultrices
+              dolor sed fringilla cursus. Aenean in convallis ante, ut gravida
+              nisi. Fusce consequat nunc sed ante scelerisque, id feugiat lorem
+              luctus. Morbi convallis lacus nec leo laoreet, a malesuada nisl
+              venenatis. Curabitur fringilla non tortor venenatis posuere. Proin
+              ultrices, ex id ultricies blandit, risus lectus vestibulum velit,
+              imperdiet maximus leo ipsum imperdiet mi.
+            </p>
+          </div>
+          <div class="flexbox-form row-flex">
+            <div id="survey-requirements">
+              <h3>Requirements</h3>
+              <ul>
+                <li>Student</li>
+                <li>Above Age ...</li>
+                <li>third</li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://www.google.com">
+                <button
+                  type="button"
+                  name="Take Survey"
+                  id="take-survey"
+                  class="survey-button"
+                >
+                  Check It Out
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="bottom"></div>
+        <small>Not responsible for any visual damage incurred.</small>
+        <div class="gray-bar">
+          Copyright <span id="copyright">&copy;</span> 2020. All Rights
+          Reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
