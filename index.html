@@ -11,79 +11,101 @@
  -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Survey Me Web</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
-    <script src="script/events.js" defer></script>
-  </head>
-  <body>
-    <div class="page-container">
-      <header class="center">
-        <h1>
-          <span id="title-1">Survey</span> <span id="title-2">For Me</span>
-        </h1>
-      </header>
-      <main>
-        <div class="description-bar center">
-          <div id="required-line">
-            Participating in a survey of groundbreaking study has never been
-            easier.
-          </div>
-          <div class="quote">
-            <p>
-              <span class="quote-marks">&#8220;</span>Launch your study to tens
-              of thousands of trusted participants in minutes. Recruit niche or
-              representative samples on-demand. Prolific builds the most
-              powerful and flexible tools for online research. Sign up for free.
-              <span class="quote-marks">&#8221;</span>
-              <br />
-              (Credit to <a href="https://www.prolific.co/">Prolific</a>)
-            </p>
-          </div>
-        </div>
-        <div class="padding-output">
-          <span id="text-output" class="center"
-            >Want to Post your own Survey?<br />
-            Click the Button and Start right Now</span
-          >
-        </div>
-        <div class="flexbox-form">
-          <div class="copy-container">
-            <a href="surveyFill.html">
-              <button
-                type="button"
-                name="copy-to-clipboard"
-                id="copy-link"
-                class="survey-button"
-              >
-                Post a Survey
-              </button>
-            </a>
-          </div>
-          <div class="copy-container">
-            <a href="surveyDo.html">
-              <button
-                type="button"
-                name="copy-to-clipboard"
-                id="start-survey"
-                class="survey-button"
-              >
-                Do a Survey
-              </button>
-            </a>
-          </div>
-        </div>
-      </main>
-      <footer>
-        <div class="bottom"></div>
-        <small>Not responsible for any visual damage incurred.</small>
-        <div class="gray-bar">
-          Copyright <span id="copyright">&copy;</span> 2020. All Rights
-          Reserved.
-        </div>
-      </footer>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Survey Me Web</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="node_modules/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer="defer"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="node_modules/jquery/dist/jquery.min.js" defer="defer"></script>
+		<script src="script/events.js" defer="defer"></script>
+	</head>
+	<body>
+		<!-- nav bar, keep before page-container -->
+		<div class="container-md">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="navbar-brand" href="index.html">
+						<img src="asset/logo_1.png" height="30" alt="">
+						<b>SurveyMe</b>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="surveyFill.html">Post Survey</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="surveyDo.html">Do Survey</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Survey Statistics</a>
+				</li>
+			</ul>
+
+			<div class="page-container">
+
+				<header class="center">
+					<h1>
+						<span id="title-1">Survey</span>
+						<span id="title-2">For Me</span>
+					</h1>
+				</header>
+				<main>
+					<div class="description-bar center">
+						<div id="required-line">
+							Participating in a survey of groundbreaking study has never been easier.
+						</div>
+						<div class="quote">
+							<p>
+								<span class="quote-marks">&#8220;</span>Launch your study to tens of thousands of trusted participants in minutes. Recruit niche or representative samples on-demand. Prolific builds the most powerful and flexible tools for online research. Sign up for free.
+								<span class="quote-marks">&#8221;</span>
+								<br/>
+								(Credit to
+								<a href="https://www.prolific.co/">Prolific</a>)
+							</p>
+						</div>
+					</div>
+					<div class="padding-output">
+						<span id="text-output" class="center">Want to Post your own Survey?<br/>
+							Click the Button and Start right Now</span >
+					</div>
+					<div class="flexbox-form">
+						<div class="copy-container">
+							<a href="surveyFill.html">
+								<button type="button" name="copy-to-clipboard" id="copy-link" class="survey-button">
+									Post a Survey
+								</button>
+							</a>
+						</div>
+						<div class="copy-container">
+							<a href="surveyDo.html">
+								<button type="button" name="copy-to-clipboard" id="start-survey" class="survey-button">
+									Do a Survey
+								</button>
+							</a>
+						</div>
+					</div>
+				</main>
+				<footer>
+					<div class="bottom"></div>
+					<small>Not responsible for any visual damage incurred.</small>
+					<div class="gray-bar">
+						Copyright
+						<span id="copyright">&copy;</span>
+						2020. All Rights Reserved.
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
 </html>
