@@ -11,120 +11,121 @@
  -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Survey Me Web</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
-    <script src="script/events.js" defer></script>
-  </head>
-  <body>
-    <div class="page-container">
-      <header class="center">
-        <h1>
-          <span id="title-1">Survey</span> <span id="title-2">For Me</span>
-        </h1>
-      </header>
-      <main>
-        <div class="description-bar center">
-          <div id="required-line">
-            Participating in a survey of groundbreaking study has never been
-            easier.
-          </div>
-          <div class="quote">
-            <p>
-              <span class="quote-marks">&#8220;</span>Launch your study to tens
-              of thousands of trusted participants in minutes. Recruit niche or
-              representative samples on-demand. Prolific builds the most
-              powerful and flexible tools for online research. Sign up for free.
-              <span class="quote-marks">&#8221;</span>
-              <br />
-              (Credit to <a href="https://www.prolific.co/">Prolific</a>)
-            </p>
-          </div>
-        </div>
-        <div class="clear padding">
-          <form class="center" action="index.html" method="post">
-            <div class="flexbox-form">
-              <fieldset>
-                <h4>Step 1: Enter your survey link:</h4>
-                <textarea
-                  name="text"
-                  rows="9"
-                  cols="40"
-                  id="text-input"
-                  required
-                ></textarea
-                ><br /><br />
-              </fieldset>
-              <img class="arrow" src="resource/arrow.png" alt="An arrow" />
-              <fieldset>
-                <h4>Step 2: Tell us a bit more about your survey:</h4>
-                <textarea
-                  name="text"
-                  rows="9"
-                  cols="40"
-                  id="text-input"
-                  required
-                ></textarea
-                ><br /><br />
-              </fieldset>
-              <img class="arrow" src="resource/arrow.png" alt="An arrow" />
-              <fieldset>
-                <h4>Step 3: Choose a target audience</h4>
-                <label for="1">Students</label>
-                <input
-                  id="1"
-                  type="radio"
-                  name="hash"
-                  value="students"
-                  required
-                  checked
-                /><br /><br />
-                <label for="2">Professors</label>
-                <input
-                  id="2"
-                  type="radio"
-                  name="hash"
-                  value="professors"
-                /><br /><br />
-                <label for="3">General Public</label>
-                <input
-                  id="3"
-                  type="radio"
-                  name="hash"
-                  value="public"
-                /><br /><br />
-              </fieldset>
-              <img class="arrow" src="resource/arrow.png" alt="An arrow" />
-              <div class="flexbox-button">
-                <button class="light-up-1 line-down" type="submit">
-                  Submit
-                </button>
-                <button class="light-up-2" type="reset" id="reset">
-                  Reset
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="padding-output">
-          <span id="text-output"># your survey link will appear here #</span>
-        </div>
-        <div class="copy-container">
-          <button type="button" name="copy-to-clipboard" id="copy-link">
-            Copy link
-          </button>
-        </div>
-      </main>
-      <footer>
-        <div class="bottom"></div>
-        <small>Not responsible for any visual damage incurred.</small>
-        <div class="gray-bar">
-          Copyright <span id="copyright">&copy;</span> 2020. All Rights
-          Reserved.
-        </div>
-      </footer>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Survey Me Web</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="node_modules/jquery/dist/jquery.slim.min.js" defer="defer"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js" defer="defer"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer="defer"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="node_modules/jquery/dist/jquery.min.js" defer="defer"></script>
+		<script src="script/events.js" defer="defer"></script>
+	</head>
+	<body>
+		<!-- nav bar, keep before page-container -->
+		<div class="container-md">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="navbar-brand" href="index.html">
+						<img src="asset/logo_1.png" height="30" alt="">
+						<b>SurveyMe</b>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="surveyFill.html">Post Survey</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="surveyDo.html">Do Survey</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Survey Statistics</a>
+				</li>
+			</ul>
+			<div class="page-container">
+				<header class="center">
+					<h1>
+						<span id="title-1">Survey</span>
+						<span id="title-2">For Me</span>
+					</h1>
+				</header>
+				<main>
+					<div class="description-bar center">
+						<div id="required-line">
+							Participating in a survey of groundbreaking study has never been easier.
+						</div>
+						<div class="quote">
+							<p>
+								<span class="quote-marks">&#8220;</span>Launch your study to tens of thousands of trusted participants in minutes. Recruit niche or representative samples on-demand. Prolific builds the most powerful and flexible tools for online research. Sign up for free.
+								<span class="quote-marks">&#8221;</span>
+								<br/>
+								(Credit to
+								<a href="https://www.prolific.co/">Prolific</a>)
+							</p>
+						</div>
+					</div>
+					<div class="clear padding">
+						<form class="center" action="index.html" method="post">
+							<div class="flexbox-form">
+								<fieldset>
+									<h4>Step 1: Enter your survey link:</h4>
+									<textarea name="text" rows="9" cols="40" id="text-input-1" required="required"></textarea ><br/><br/>
+								</fieldset>
+								<img class="arrow" src="asset/arrow.png" alt="An arrow"/>
+								<fieldset>
+									<h4>Step 2: Tell us a bit more about your survey:</h4>
+									<textarea name="text" rows="9" cols="40" id="text-input-2" required="required"></textarea ><br/><br/>
+								</fieldset>
+								<img class="arrow" src="asset/arrow.png" alt="An arrow"/>
+								<fieldset>
+									<h4>Step 3: Choose a target audience</h4>
+									<label for="1">Students</label>
+									<input id="1" type="radio" name="hash" value="students" required="required" checked="checked"/><br/><br/>
+									<label for="2">Professors</label>
+									<input id="2" type="radio" name="hash" value="professors"/><br/><br/>
+									<label for="3">General Public</label>
+									<input id="3" type="radio" name="hash" value="public"/><br/><br/>
+								</fieldset>
+								<img class="arrow" src="asset/arrow.png" alt="An arrow"/>
+								<div class="flexbox-button">
+									<button class="light-up-1 line-down" type="submit">
+										Submit
+									</button>
+									<button class="light-up-2" type="reset" id="reset">
+										Reset
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="padding-output">
+						<span id="text-output"># your survey link will appear here #</span>
+					</div>
+					<div class="copy-container">
+						<button type="button" name="copy-to-clipboard" id="copy-link">
+							Copy link
+						</button>
+					</div>
+				</main>
+				<footer>
+					<div class="bottom"></div>
+					<small>Not responsible for any visual damage incurred.</small>
+					<div class="gray-bar">
+						Copyright
+						<span id="copyright">&copy;</span>
+						2020. All Rights Reserved.
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
 </html>

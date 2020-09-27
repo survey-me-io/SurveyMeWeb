@@ -17,13 +17,19 @@ body {
     rgba(166, 211, 223, 1)
   );
   /* background-color: rgba(224, 229, 225, 1); */
-  margin-top: 3.5em;
+}
+
+.nav-link:hover {
+	color: white;
+	background-color: rgb(0, 123, 255);
+	transition: background-color 0.5s;
 }
 
 .page-container {
   padding: 0 2em 0 2em;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+  margin-top: 3.5em;
 }
 
 h1 {
@@ -105,8 +111,9 @@ fieldset {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
-#text-input {
+#text-input-1, #text-input-2 {
   border-radius: 15px;
+  width: 80%
 }
 
 .arrow {
