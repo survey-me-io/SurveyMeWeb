@@ -1,12 +1,10 @@
-alert('here')
-
 // event listener for mouse over color change
 let copy = document.getElementById('copy-link');
 copy.addEventListener('mouseover', function() {
 	copy.style.backgroundColor = 'rgb(178, 8, 8)';
 	copy.style.cursor = 'pointer';
 });
-copy.addEventListener('mouseout', function() {
+copy.addEventListener('mouseout', function() {bea
 	copy.style.backgroundColor = 'rgb(208, 53, 38)';
 	copy.style.cursor = 'default';
 })
