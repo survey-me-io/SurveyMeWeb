@@ -4,15 +4,26 @@
 
 - _features currently under development_
 
-Things to do before (09/29/2020):
-1. Update all Pages with Bootstrap (Felix)
-2. Learn Bootstrap (Michael)
-3. Find At least the email+Name+Area of 5 professors to reach out (Michael and Felix) *
-4. Fix Alert thing & NavBar to go back (Felix) *
+Things to do before (09/30/2020):
+1. Firebase Hosting Service Test (Felix)
+2. Draft Email Template (Michael)
+3. Find 3 more professors and put them on excel (Felix)
+4. Keep Learning Bootstrap (Michael)
+5. Trying to Start writing the backend (Michael)
 
-Things to Discuss (09/29/2020):
-1. REST API & Backend? 
 
+Things to Discuss (09/30/2020):
+1. Website Hosting 
+
+Stages:
+1. Technologies- Problem Fit (Identify if a problem does exist and try to a technology to solve it) <== Current
+2. Solution -Problem Fit (Have a MVP as a solution and see if it fixes the problem)
+3. Product - Market Fit (Is it scaleable, is it something people want)
+4. Business Model (How to make money)
+
+Standard for Email:
+- One email, if no reply after 3 days do a follow up (2 followsups before giving up)
+- Schuedule Meeting
 
 <br/>
 
