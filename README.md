@@ -1,6 +1,6 @@
 # SurveyMeWeb
 
-- #### Entry point = 'index.html' ####
+- #### Latest live site: 'https://survey-me-df965.web.app/' ####
 
 - _features currently under development_
 
